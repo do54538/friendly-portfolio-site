@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sou Araki</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#top">Sou Araki</a>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#works">Works</a>
+            </nav>
+        </header>
+        <main>
+            <!--六面自己紹介を作りたい-->
+            <section id="top">
+                <img src="./media/AdobeStock_291269683.jpeg" width="300", alt="elephant">
+                <h1>Sou Araki <br> Portfolio</h1>
+            </section>
+
+            <section id="about">
+                <h2>About</h2>
+                <p>
+                    荒木 颯 <br>
+                    東京都市大学 デザイン・データ科学部
+                </p>
+                <p>
+                    専門: データ分析<br>
+                    スキル: Python<br>
+                </p>
+            </section>
+            
+            <section id="works">
+                <h2>Works</h2>
+                <div id="works-controls">
+                    <!-- ここに作品が表示される -->
+                    <select id="category">
+                        <option value="all">All</option>
+                    </select>
+
+                    <select id="sort">
+                        <option value="new">新しい順</option>
+                        <option value="old">古い順</option>
+                        <option value="title">タイトル順</option>
+                    </select>
+                </div>
+                <div id="works-grid"></div>
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>
+                    メール: test@example.com<br>
+                    テレフォン: 000-0000-0000
+                </p>
+            </section>
+
+            <section id="Research">
+                <h2>Research</h2>
+                <ul>
+                    <li>研究1</li>
+                    <li>研究2</li>
+                    <li>研究3</li>
+                </ul>
+            </section>
+
+            <section id="technology">
+                <h2>Technology</h2>
+                <ul>
+                    <li>技術1</li>
+                    <li>技術2</li>
+                    <li>技術3</li>
+                </ul>
+            </section>
+
+        </main>
+        <footer>
+            <span>© 2024 Sou Araki</span>
+        </footer>
+        <script src="works.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,107 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+
+body {
+    background: #ffffff;
+    color: #000000;
+}
+
+a {
+    /*親要素の設定を引き継ぐ*/
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* ヘッダーを常に画面上部に固定する */
+    position: fixed;
+    padding: 0px 30px;
+    background: #ffffff;
+    height: 75px;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a:hover {
+    color: #9c9393;
+}
+
+section {
+    padding: 10px 30px;
+}
+
+#top {
+    padding: 70px 30px;
+}
+
+footer {
+    padding: 20px 30px;
+    font-size: 11px;
+}
+
+*{box-sizing: border-box;}
+
+#works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.work-card img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+}
+
+.work-card {
+    border: 1px solid #000000;
+}
+
+.work-card h4 {
+    margin: 15px 15px 5px;
+}
+
+.work-card p {
+    margin: 0 15px 15px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.work-card:hover {
+    opacity: 0.8;
+}
+
+.works-contrainer {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.works-controls select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.work-category {
+    font-size: 4px;
+    padding-top: 14px;
+    color: #9c9c9c;
+}
+
+.work-year { 
+    font-size: 10px;
+    margin-top: 10px;
+}
